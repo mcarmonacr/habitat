@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lesco.diccionario.model">
+    <class name="Resources" table="Resources">
+    
+        <id name="resourcesId" type="java.lang.Integer" column="Resources_ID">
+            <generator class="foreign">
+            	<param name="property">corporation</param>
+            </generator>
+        </id>
+        
+        <one-to-one name="corporation" class="Corporation"
+			constrained="true" lazy="false"></one-to-one>
+        
+        <property name="informationCapture" column="InformationCapture" />
+        <property name="humanResource" column="HumanResource" />
+        <property name="relationshipNetwork" column="RelationshipNetwork" />
+        <property name="habilities" column="Habilities" />
+        <property name="informationDifusion" column="InformationDifusion" />
+        <property name="housing" column="Housing" />
+        <property name="environmental" column="Environmental" />
+        <property name="social" column="Social" />
+        <property name="products" column="Products" />
+        <property name="others" column="Others" />
+        
+    </class> 
+</hibernate-mapping>

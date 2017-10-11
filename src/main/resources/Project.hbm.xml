@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lesco.diccionario.model">
+    <class name="Project" table="Project">
+    
+        <id name="projectId" type="java.lang.Integer" column="Project_ID">
+            <generator class="native"/>
+        </id>
+        
+        <property name="projectName" column="ProjectName" />
+        <property name="projectCode" column="ProjectCode" />
+        <property name="projectScope" column="ProjectScope" />
+        
+<!--         <one-to-one name="scope" class="Scope" -->
+<!-- 			cascade="save-update"></one-to-one> -->
+			
+		<set name="contacts" table="Contact"
+			inverse="true" lazy="false" fetch="select">
+           <key>
+               <column name="Contact_ID" not-null="true"/>
+           </key>
+           <one-to-many class="Contact" />
+        </set>
+        
+        <set name="requirements" table="Requirement"
+			inverse="true" lazy="false" fetch="select">
+           <key>
+               <column name="Requirement_ID" not-null="true"/>
+           </key>
+           <one-to-many class="Requirement" />
+        </set>
+        
+    </class> 
+</hibernate-mapping>

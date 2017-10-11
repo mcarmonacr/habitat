@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lesco.diccionario.model">
+    <class name="Scope" table="Scope">
+    
+         <id name="scopeId" type="java.lang.Integer" column="Scope_ID">
+            <generator class="native"/>
+        </id>
+        
+        <one-to-one name="corporation" class="Corporation"
+			constrained="true"></one-to-one>
+			
+		<one-to-one name="project" class="Project"
+		constrained="true"></one-to-one>
+        
+        <property name="name" column="Name" />
+
+    </class> 
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.lesco.diccionario.model">
+    <class name="Corporation" table="Corporation">
+    
+        <id name="corporationId" type="java.lang.Integer" column="Corporation_ID">
+            <generator class="native"/>
+        </id>
+        
+        <property name="corporationName" column="CorporationName" />
+        <property name="industry" column="Industry" />
+        <property name="scope" column="Scope" />
+        <property name="actionAxis" column="ActionAxis" />
+        <property name="comments" column="Comments" />
+        <property name="address" column="Address" />
+        <property name="availableDate" column="AvailableDate" />
+        <property name="habitatParticipation" column="HabitatParticipation" />
+        
+        <one-to-one name="resources" class="Resources"
+			cascade="save-update"></one-to-one>
+			
+		<set name="contacts" table="Contact"
+			inverse="true" lazy="false" fetch="select">
+           <key>
+               <column name="Contact_ID" not-null="true"/>
+           </key>
+           <one-to-many class="Contact" />
+        </set>
+        
+    </class> 
+</hibernate-mapping>

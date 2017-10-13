@@ -80,9 +80,9 @@ http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
 	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-	    <property name="url" value="jdbc:mysql://127.9.124.2:3306/habitat"/>
-	    <property name="username" value="adminkw2cySN"/>
-	    <property name="password" value="dmyFZ8tpD1UI"/>
+	    <property name="url" value="jdbc:mysql://mysql:3306/habitat"/>
+	    <property name="username" value="qDA8hrai3Agmp7qb"/>
+	    <property name="password" value="user4NC"/>
 	</bean>
 	
 	<bean id="sessionFactory"

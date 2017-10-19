@@ -298,7 +298,7 @@
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendReportModal" data-href='#'>
                   <td>Asegurar el informe parcial</td>
-                  <td>Fecha: 12/12/16</td>
+                   <td>Días disponibles: 10</td>
                   <td>Construcción Colegios</td>
                   <td>Involucramiento</td>
                 </tr>
@@ -310,19 +310,19 @@
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendReportModal" data-href='#'>
                   <td>Asegurar el informe parcial</td>
-                  <td>Fecha: 12/12/16</td>
+                   <td>Días disponibles: 12</td>
                   <td>Construcción Colegios</td>
                   <td>Involucramiento</td>
                 </tr>
                 <tr>
                   <td>Presentar propuesta a la corporación Barceló</td>
-                  <td>Días disponibles: 2</td>
+                  <td>Días disponibles: 20</td>
                   <td>Cosntrucción Piletas</td>
                   <td>Solicitud</td>
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendReportModal" data-href='#'>
                   <td>Asegurar el informe parcial</td>
-                  <td>Fecha: 12/12/16</td>
+                   <td>Días disponibles: 17</td>
                   <td>Construcción Colegios</td>
                   <td>Involucramiento</td>
                 </tr>
@@ -377,24 +377,30 @@
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendPollModal" data-href='#'>
                   <td>Enviar encuesta de percepción de la gestión del aporte</td>
                   <td>Días Disponibles: 10</td>
+                  <td>Proyecto Aserrí</td>
+                  <td>Solicitud</td>
+                </tr>
+                <tr class='clickable-row' data-toggle="modal" data-target="#ensureContributionModal" data-href='#'>
+                  <td>Asegurar el Aporte</td>
+                  <td>Días Disponibles: 2</td>
                   <td>Construcción Escuelas</td>
                   <td>Solicitud</td>
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendReportModal" data-href='#'>
                   <td>Asegurar el informe parcial</td>
-                  <td>Fecha: 24/01/17</td>
+                   <td>Días disponibles: 9</td>
                   <td>Edificación de Viviendas</td>
                   <td>Involucramiento</td>
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendAlianceReminderModal" data-href='#'>
                   <td>Enviar recordatorio para realizar la actividad de alianza a ON</td>
-                  <td>Fecha: 10/11/17</td>
+                   <td>Días disponibles: 14</td>
                   <td>Todos</td>
                   <td>Fidelización</td>
                 </tr>
                 <tr>
                   <td>Asegurar el informe Final</td>
-                  <td>Fecha: 24/08/17</td>
+                   <td>Días disponibles: 18</td>
                   <td>Construcción</td>
                   <td>Involucramiento</td>
                 </tr>
@@ -448,19 +454,19 @@
               <tbody>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendContributionReminderModal" data-href='#'>
                   <td>Enviar correo a la corporación IBM recordando el aporte acordado para el 15/09/17 </td>
-                  <td>Días disponibles: 0</td>
+                  <td>Días de Retraso: 21</td>
                   <td>Entrega Lotes</td>
                   <td>Solicitud</td>
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#sendReportModal" data-href='#'>
                   <td>Asegurar el informe parcial</td>
-                  <td>Fecha: 24/01/16</td>
+                  <td>Días de Retraso: 34</td>
                   <td>Cosntrucción Colegios</td>
                   <td>Involucramiento</td>
                 </tr>
                 <tr class='clickable-row' data-toggle="modal" data-target="#uploadAgreementModal" data-href='#'>
                   <td>Subir Convenio a la base de datos</td>
-                  <td>Días Disponibles: 1</td>
+                  <td>Días de Retraso: 15</td>
                   <td>Limpieza de Terreno</td>
                   <td>Solicitud</td>
                 </tr>
@@ -505,6 +511,7 @@
 	<#include "/modal/sendContributionReminderModal.ftl">
 	<#include "/modal/sendReportModal.ftl">
 	<#include "/modal/sendAlianceReminderModal.ftl">
+	<#include "/modal/ensureContributionModal.ftl">
   
 </div>
     

@@ -143,3 +143,19 @@ tr { cursor: pointer; cursor: hand; }
     padding-left: 0;
   }
 }
+
+.glyphicon {
+    font-size: 22px;
+}
+
+.glyphicon.glyphicon-check{
+	color:green;
+}
+
+.glyphicon.glyphicon-remove{
+	color:red;
+}
+
+.contribution{
+	text-align: center;
+}
